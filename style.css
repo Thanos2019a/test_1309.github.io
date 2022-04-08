@@ -4,9 +4,11 @@
 body {
   font-family: 'Lato', sans-serif;
   width: 100%;
+  height: 100%;
+  background-color: 0;
 }
 
-.overlay {
+.phone_menu {
   height: 100%;
   width: 0;
   position: fixed;
@@ -19,15 +21,15 @@ body {
   transition: 0.5s;
 }
 
-.overlay-content {
+.phone_menu-content {
   position: relative;
-  top: 25%;
+  top: 100px;
   width: 100%;
   text-align: center;
   margin-top: 30px;
 }
 
-.overlay a {
+.phone_menu a {
   padding: 8px;
   text-decoration: none;
   font-size: 25px;
@@ -36,24 +38,15 @@ body {
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.phone_menu a:hover, .phone_menu a:focus {
   color: #f1f1f1;
 }
 
-.overlay .closebtn {
+.phone_menu .closebtn {
   position: absolute;
   top: 5px;
   right: 45px;
   font-size: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
 }
 .top_panel{
   position: sticky;
@@ -76,27 +69,6 @@ body {
   width: 40px;
   right: 90px;
 }
-.box_search_field{
-  position: relative;
-  left: 50%;
-  margin-left: -150px;
-  top: 20px;
-  width: 300px;
-}
-.box_search_field input{
-  border-radius: 30px;
-  width: 100%;
-  height: 40px;
-  text-align: center;
-  background-color: grey;
-  font-size: 25px;
-}
-.box_search_field img{
-  position: relative;
-  width: 28px;
-  margin-left: 250px;
-  top: -48px;
-}
 
 .pc_menu_box{
   position: relative;
@@ -109,9 +81,8 @@ body {
   font-family: Andale Mono, monospace;
 }
 .pc_menu_box a:hover{
-   color: red;
    font-size: 21px;
-   -moz-transition: all .3s linear;
+   text-decoration: 2px underline;
 }
 
 @media (min-width: 970px){
@@ -134,10 +105,13 @@ body {
     font-size: 20px;
     color: red;
     top: -43px;
-    left: 130px;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    background-color: red;
   }
 }
-@media (min-width: 1100px){
+@media (min-width: 1300px){
   .img_shopping-basket{
     width: 23px;
   }
@@ -147,64 +121,20 @@ body {
   }
 }
 
-/******** BOTTOM_STYLE ********/
-.bottom_panel{
+/****** Низ ******/
+
+.bottom_box{
   position: relative;
-  bottom: -100%;
-  left: 0px;
   width: 100%;
   height: 600px;
+  bottom: 0px;
+  left: 0%;
+  z-index: 2;
   background-color: black;
-}
-.container_info{
-  position: relative;
-  width: 230px;
-  height: 260px;
-  left: 50%;
-  top: 80px;
-  margin-left: -115px;
-  background-color: green;
-}
-.container_info img{
-  margin-left: auto;
-  width: 30px;
-}
-.container_info p{
-  font-size: 18px;
-  color: white;
-}
-
-.container_info_b{
-  position: relative;
-  width: 230px;
-  height: 50px;
-  left: 50%;
-  top: 15px;
-  margin-left: -115px;
-  background-color: green;
-}
-.container_info_b p{
-  font-size: 40px;
-  color: white;
-  text-align: center;
-}
-
-.bottom_panel_info_box_a{
-  position: relative;
-  margin-top: 15px;
-  width: 150px;
-  height: 250px;
-}
-.bottom_panel_info_box_a a{
-  position: relative;
-  margin-top: 10px;
-  text-align: center;
 }
 
 @media (min-width: 970px){
-  .bottom_panel{
-    position: relative;
+  .bottom_box{
     height: 300px;
-
   }
 }
