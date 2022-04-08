@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="style_home.css">
-<link rel="stylesheet" type="text/css" href="test.css">
+	<title> <!--TITLE-->Shtopka UA | home<!--END TITLE--></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+	<!--CSS_STYLE-->
+	<link rel="stylesheet" type="text/css" href="button_io.css">
+	<link rel="stylesheet" type="text/css" href="style_home.css">
+	<!--END CSS_STYLE-->
 </head>
 <body>
 	<div class="top_panel">
-
 		<div style="width: 100%; height: 100%; background-color: white; opacity: 0.7;"></div>
 
 		<a href="#"><img class ="img_shopping-basket" src="icon_base/shopping-basket.png"></a>
-
 		<a href="#"><img class="img_user" src="icon_base/user.png"></a>
 
-        <div id="myNav" class="overlay">
+        <div id="myNav" class="phone_menu">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-            	<div class="box_search_field">
-            		<input name="search_field" type="text" />
-            		<a href="#"><img src="icon_base/magnifier.png"></a>
-            	</div>
+            <div class="phone_menu-content">
             	<a href="#">Главная</a>
                 <a href="#">Магазн</a>
                 <a href="#">Услуги</a>
@@ -33,7 +31,6 @@
         <div class="button_menu">
         	<span style="position: absolute; font-size:40px;cursor:pointer;top: 15px; left: 20px;" onclick="openNav()">&#9776;</span>
         </div>
-
         <div class="pc_menu_box">
         	<a href="#">Главная</a>
         	<a href="#">Магазн</a>
@@ -44,69 +41,79 @@
         </div>
 	</div>
 
-    <script type="text/javascript" src="script.js"></script>
-
     
-	<!-- CONTENT type -->
+    <!-- CONTENT TYPE... -->
+    <!--TOP_GALLERY-->
+    <div class="content_info">
+    	<p style="position: absolute; font-size: 90px; color: white;">Hello World!!!</p>
+    	<div class="gallery_box">
+    	    <img src="icon_base/photo-612x612.jpg">
+    	</div>
+    </div>
+    <!--END TOP_GALLERY-->
+    <div class="content">
+        <div class="content_box">
+    	    <div class="button_info">
+    		    <p class="top_text">Shtopa</p>
+    		    <div class="button">
+    		    	<a href="#">
+    		    	    <div class="button_one">
+       		    		    <p>Подробнее о проекте</p>
+    		    	    </div>
+    		    	</a>
+    		    </div>
+    	    </div>
+    	    <div class="text_info">
+    		    <p>Уникальный проект, объединяющий онлайн ателье по ремонту, пошиву и кастомайзингу и 3D моделирование по вашим параметрам. Если вы любите оригинальные, нестандартные решения в одежде, то здесь вы найдете именно то, что ищите. Если вам сложно расставаться с любимыми вещами, то мы поможем дать им вторую жизнь. </p>
+    	    </div>
+        </div>
 
-	<div class="gallery_box_one">
-		<div class="gallery_box_buttons"></div>
-		<img src="icon_base/photo-612x612.jpg">
-	</div>
+        <div class="content_box">
+        	<div class="box_img_info">
+    	        <div class="img_info">
+    	         	<p>3Д моделирование</p>
+    	        	<a href="#">
+    	        		<div class="box">
+    		                <img src="icon_base/photo_2831_612x612.jpg">
+    	                </div>
+    	        	</a>
+    	        </div>
+    	        <div class="img_info">
+    	    	    <p>3Д моделирование</p>
+    	    	    <a href="#">
+    	    		    <div class="box">
+    		                <img src="icon_base/photo-8678-612x612.jpg">
+    	                </div>
+    	    	    </a>
+    	        </div>
+        	</div>
+        </div>
+
+        <div class="content_box">
+        	<div class="button_info">
+    		    <p class="top_text">Shtopa</p>
+    		    <div class="button">
+    		    	<a href="#">
+    		    	    <div class="button_one">
+       		    		    <p>Отправить анкету</p>
+    		    	    </div>
+    		    	</a>
+    		    </div>
+    	    </div>
+    	    <div class="text_info">
+    		    <p>Уникальный проект, объединяющий онлайн ателье по ремонту, пошиву и кастомайзингу и 3D моделирование по вашим параметрам. Если вы любите оригинальные, нестандартные решения в одежде, то здесь вы найдете именно то, что ищите. Если вам сложно расставаться с любимыми вещами, то мы поможем дать им вторую жизнь. </p>
+    	    </div>
+        </div>
+
+        <div class="content_box">
+        	<iframe class="video_box" src="https://www.youtube.com/embed/IGOutUyuQt0?start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
     
-    <div class="box_info_one">
-    	<p>RedHatShop</p>
-    	<button style="border-radius: 8px; border-color: green;">Подробнее о проекте</button>
-    </div>
+    <!-- END CONTENT TYPE... -->
 
-    <div class="box_info_two">
-    	<p>Уникальный проект, объединяющий онлайн ателье по ремонту, пошиву и кастомайзингу и 3D моделирование по вашим параметрам. Если вы любите оригинальные, нестандартные решения в одежде, то здесь вы найдете именно то, что ищите. Если вам сложно расставаться с любимыми вещами, то мы поможем дать им вторую жизнь. </p>
-    </div>
-
-    <div class="box_info_three">
-        <img src="icon_base/photo_2831_612x612.jpg">
-        <img src="icon_base/photo-8678-612x612.jpg">
-    </div>
-
-    <div class="box_info_four">
-    	<p style="position: relative; text-align: center; margin-top: 40px;">ЦИФРОВОЕ МОДЕЛИРОВАНИЕ ОДЕЖДЫ</p>
-    	<p style="position: relative; text-align: initial; margin-top: 20px;
-    	font-size: 17px;">
-            3D моделирование одежды - современный и актуальный способ построения и примерки одежды online.
-
-            Если вы не знаете, подойдет ли вам по силуэту и цвету выбранное для пошива платье, то самый экономичный и простой способ узнать это - заказать 3D модель с вашими параметрами.
-
-            При построении виртуальной модели учитывается и фактура ткани, и ее плотность, и расцветка. Поэтому, одну и ту же модель одежды можно увидеть в самых различных вариациях. 
-
-            Экономьте свое время и деньги. 
-    	</p>
-    </div>
-
-    <iframe class="box_info_five" src="https://www.youtube.com/embed/IGOutUyuQt0">
-    </iframe>
-
-    <!--https://www.youtube.com/watch?v=SON1J788Srw-->
-
-	<!-- CONTENT type -->
-    
-    <div class="bottom_panel">
-    	<div class="bottom_panel_info_box_a">
-    		<a href="#">Виды тканей</a>
-    		<a href="#">Виды одежды</a>
-    		<a href="#">Уход за тканями</a>
-    		<hr style="position: relative; width: 90%; left: 5%; line-height: 5px;
-    		background-color: gray;">
-    	</div>
-    	<div class="container_info_b">
-    		<p>RedHatShop</p>
-    	</div>
-    	<div class="container_info">
-    		<p><img src="icon_base/icon-viber.png">+380982727330</p>
-    		<p><img src="icon_base/icon-telegram.png">@andrei_ku</p>
-    		<p><img src="icon_base/icon-whatsapp.png">+380982727330</p>
-    		<p><img src="icon_base/icon-facebook.png">3d.object.ua</p>
-    		<p><img src="icon_base/icon-instagram.png">+andrei.kush.nir</p>
-    	</div>
+    <div class="bottom_box">
+    	
     </div>
 
 </body>
