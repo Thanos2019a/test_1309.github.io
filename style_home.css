@@ -1,137 +1,213 @@
-.gallery_box_one{
-	position: relative;
-	width: 100%;
-
-}
-.gallery_box_one img{
-	position: relative;
-	width: 100%;
-}
-.gallery_box_buttons{
-	position: relative;
-	background-color: red;
-	width: 100%;
-	height: 100%;
-	z-index: 2;
+.content_info{
+	position: sticky;
+	z-index: 1;
+	top: 80px;
 }
 
-.box_info_one{
+.content{
 	position: relative;
-	width: 300px;
-	height: 200px;
+    z-index: 2;
+    background-color: white;
+}
+.content_box{
+	position: relative;
+	width: 100%;
+	padding-top: 30px;
+	background-color: 0;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.gallery_box img{
+	width: 100%;
+}
+
+.button{
+
+}
+
+/***** Ряд 1 *****/
+.button_info{
+	position: relative;
+    width: 224px;
 	left: 50%;
-	margin-left: -150px;
+	margin-top: 20px;
+	margin-left: -100px;
 	background-color: 0;
 }
-.box_info_one p{
-	position: relative;
+.button_info .top_text{
+	text-align: center;
 	font-size: 30px;
-	top: 30px;
-	text-align: center;
-	font-family: sans-serif;
-	color: #1C1C1C;
-}
-.box_info_one button{
-	position: relative;
-	width: 250px;
-	height: 60px;
-	left: 50%;
-	top: 45px;
-	margin-left: -125px;
-	text-align: center;
-	font-size: 20px;
-}
-
-.box_info_two{
-	position: relative;
-}
-.box_info_two p{
-	position: relative;
 	color: #2E2E2E;
-	margin-top: 10px;
+}
+.text_info{
+	position: relative;
+	margin-top: 20px;
+	width: 100%;
+	background-color: 0;
+}
+.text_info p{
+	position: relative;
+	font-size: 17px;
+	color: #2E2E2E;
 	font-family: cursive;
 	text-align: justify;
-	font-size: 18px;
 	width: 95%;
 	left: 2.5%;
 }
 
-.box_info_three{
+/***** Ряд 2 *****/
+
+.content_box .img_info{
 	position: relative;
-	left: 5%; 
+	margin-top: 50px;
+	width: 350px;
+    height: 350px;
+    left: 50%;
+    margin-left: -176px;
+    background-color: yellow;
 }
-.box_info_three img{
+.img_info a{
+	width: 100%;
+	height: 100%;
+	background-color: red;
+}
+.img_info p{
 	position: relative;
-	width: 90%;
-	margin-top: 20px;
+	text-align: center;
+}
+.box{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.box img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
-.box_info_four{
-	position: relative;
-	width: 80%;
-	left: 10%;
+/***** Ряд 3 *****/
 
-}
-
-.box_info_five{
+.content_box .video_box{
 	position: relative;
-	width: 90%;
-	max-width: 600px;
-	margin-top: 40px;
-	left: 5%;
+	width: 95%;
 	height: 300px;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
 }
-@media (min-width: 700px){
-	.box_info_five{
-		position: relative;
-		width: 650px;
-		left: 50%;
-		margin-left: -325px;
-	}
 
-}
-@media (min-width: 970px){
-	.gallery_box_one{
-		position: relative;
-	    width: 900px;
+/***** Ряд 4 *****/
+
+/***** Ряд 5 *****/
+
+
+@media(min-width: 480px){
+	.content_box{
+		background-color: 0;
+	}
+	.button_info{
+        
+        
+    }
+    .text_info{
+	    position: relative;
+	    margin-top: 20px;
+	    width: 460px;
 	    left: 50%;
-	    margin-left: -450px;
+	    margin-left: -230px;
+
     }
-    .box_info_one{
-    	left: 45%;
-	    margin-left: -400px;
+
+    .content_box .img_info{
+    	width: 470px;
+    	height: 470px;
+    	margin-left: -235px;
     }
-    .box_info_two{
-    	position: relative;
-    	left: 40%;
-    	width: 550px;
-    	top: -200px;
-    	margin-right: -50px;
+}
+
+@media(min-width: 720px){
+	.content_box{
+		position: relative;
+		background-color: 0;
+		overflow:hidden;
+
+	}
+	.gallery_box img{
+	    width: 100%;
+	    height: 550px;
     }
-    .box_info_three{
-    	position: absolute;
+    .button_info{
+    	height: 160px;
+    	left: 10%;
+    	margin-left: 0px;
     	background-color: 0;
-    	left: 50%;
-    	margin-left: -450px;
-    	top: 850px;
-    	width: 900px;
     }
-    .box_info_three img{
-    	position: relative;
-    	width: 445px;
+    .text_info{
+    	width: 45%;
+    	right: 15%;
+    	margin-left: 0px;
+    	margin-top: -160px;
+    	background-color: 0
     }
-    .box_info_four{
+
+    /***** Ряд 2 *****/
+
+    .content_box .box_img_info{
     	position: relative;
+    	width: 705px;
     	left: 50%;
-    	top: 320px;
-    	width: 330px;
+    	margin-left: -350px;
+    }
+    .content_box .img_info{
+    	width: 350px;
+    	height: 350px;
+    	left: 0px;
+    	margin-left: 0px;
+    	display:inline-block;
+    }
+
+    /***** Ряд 3 *****/
+
+    .content_box .video_box{
+	    width: 80%;
+	    height: 400px;
+	    padding-left: 10%;
+	    padding-right: 10%;
+    }
+}
+@media(min-width: 880px){
+	/***** Ряд 2 *****/
+    .content_box .box_img_info{
+    	position: relative;
+    	width: 865px;
+    	left: 50%;
     	margin-left: -430px;
     }
-    .box_info_five{
-	    position: relative;
-	    width: 470px;
-	    margin-top: 0px;
-	    margin-left: -50px;
-	    height: 320px;
+    .content_box .img_info{
+    	width: 430px;
+    	height: 430px;
+    	left: 0px;
+    	margin-left: 0px;
+    	display:inline-block;
+    }
+}
+@media(min-width: 1020px){
+	.content_box{
+		background-color: orange;
+	}
+
+    
+	.content_box .img_info{
+    	width: 400px;
+    	height: 400px;
+    	left: 0%;
+    	margin-left: 0px;
+    	
     }
 }
